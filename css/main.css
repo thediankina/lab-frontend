@@ -185,7 +185,6 @@ h1, h2, h3 {
     font-size: 0;
     display: block;
     border: 20px solid transparent;
-    color: transparent;
 
     position: absolute;
     top: 50%;
@@ -200,4 +199,55 @@ h1, h2, h3 {
 .portfolio__btn-next {
     right: 0;
     border-left: 20px solid #37669A;
+}
+
+/* team */
+.team {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    width: 100%;
+    max-width: 270px;
+    height: 400px;  /* 420px without slider */
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team__img {
+    max-width: 200px;
+    max-height: 250px;
+    margin: 35px 35px 20px 35px;
+}
+
+.team__about-pro {
+    font-size: 20px;
+    text-align: center;
+}
+
+.team__about-name {
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.team_slider {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__slider-item {
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    display: block;
+    background-color: #3879C2;
 }
