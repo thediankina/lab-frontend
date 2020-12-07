@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJQgMEoEggCNxRUyo6JzLCG55fpY0PQSY&callback=initMap&libraries=&v=weekly" defer></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oxygen:wght@400;700&family=Patrick+Hand&family=Roboto&family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <title>Diving club</title>
@@ -129,7 +131,7 @@
             <div class="pricing__item-field">
                 <div class="pricing__item-text">Number of people</div>
             </div>
-            <a class="pricing__btn" href="#">Book</a>
+            <a class="action__btn pricing__btn" href="#">Book</a>
         </div>
         <div class="pricing__item-more">
             <div class="pricing__item-tours">
@@ -147,5 +149,33 @@
             </div>
         </div>
     </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">How to contact us?</h2>
+            <div class="section__text">
+                <p>If you have a question, you can write to us about it,
+                    specifying your email address for the answer.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact__contact">
+                <div class="contact__item-name">
+                    <div class="contact__item-text">Name</div>
+                </div>
+                <div class="contact__item-email">
+                    <div class="contact__item-text">Email</div>
+                </div>
+            </div>
+            <div class="contact__item-message">
+                <div class="contact__item-text">Message</div>
+            </div>
+            <a class="action__btn contact__btn" href="#">Send</a>
+        </div>
+    </div>
+</section>
+<section>
+    <div id="map"></div>
 </section>
 </html>
