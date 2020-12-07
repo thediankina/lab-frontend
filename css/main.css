@@ -456,3 +456,53 @@ h1, h2, h3 {
     width: 100%;
     height: 100vh;
 }
+
+/* calendar */
+.section--calendar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+}
+
+.calendar {
+    width: 700px;
+    height: auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.month {
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.calendar .date {
+    width: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 10px;
+}
+
+.calendar .date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #183A60;
+}
+
+.calendar .date div.number.active,
+.calendar .date div.number:hover {
+    cursor: pointer;
+    background: #E4F1FF;
+    box-shadow: 4px 4px 4px #37669A;
+}
