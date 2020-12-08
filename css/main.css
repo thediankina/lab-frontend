@@ -39,6 +39,7 @@ h1, h2, h3 {
 .container {
     width: 100%;
     max-width: 1300px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -190,8 +191,19 @@ h1, h2, h3 {
     color: white;
 }
 
-.portfolio__slider {
+.slider {
     position: relative;
+    overflow: hidden;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .portfolio__img {
@@ -200,7 +212,7 @@ h1, h2, h3 {
     margin: 0 50px;
 }
 
-.portfolio__btn {
+.slider__control {
     font-size: 0;
     display: block;
     border: 20px solid transparent;
@@ -210,12 +222,14 @@ h1, h2, h3 {
     transform: translateY(-50%);
 }
 
-.portfolio__btn-prev {
+
+
+.slider__control_right {
     left: 0;
     border-right: 20px solid #37669A;
 }
 
-.portfolio__btn-next {
+.slider__control_left {
     right: 0;
     border-left: 20px solid #37669A;
 }
@@ -565,9 +579,11 @@ h1, h2, h3 {
 }
 
 .footer__copyright {
-    line-height: 150px;
-    color: #E4F1FF;
-    background: #02274B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
 }
 
 .footer__social {
@@ -587,4 +603,144 @@ h1, h2, h3 {
     border-radius: 50%;
     background-color: #7E95AF;
     text-decoration: none;
+}
+
+@media (device-width: 575px) {
+
+    body {
+        margin-right: 0;
+    }
+
+    .intro__title {
+        font-size: 50px;
+    }
+
+    .intro__suptitle {
+        font-size: 20px;
+    }
+
+    .about__img img {
+        width: 80px;
+        margin-left: 55px;
+    }
+
+    .about__text {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 40px;
+    }
+
+    .section__text {
+        font-size: 18px;
+    }
+
+    .portfolio__text {
+        font-size: 20px;
+    }
+
+    .portfolio__img {
+        width: 300px;
+    }
+
+    .slider {
+        width: 400px;
+    }
+
+    .team__img {
+        max-width: 100px;
+        max-height: 150px;
+    }
+
+    .team__item {
+        max-width: 170px;
+        height: 350px;
+    }
+
+    .team__about-name {
+        font-size: 17px;
+    }
+
+    .pricing {
+        margin: 0;
+    }
+
+    .pricing__item-more {
+        max-width: 270px;
+    }
+
+    .pricing__item-tours {
+        max-width: 250px;
+    }
+
+    .pricing__item-client {
+        max-width: 250px;
+    }
+
+    .pricing__item-book {
+        max-width: 270px;
+        margin-left: 20px;
+    }
+
+    .pricing__item-title {
+        font-size: 25px;
+        line-height: 80px;
+    }
+
+    .pricing__item-field {
+        width: 200px;
+        margin-left: 35px;
+    }
+
+    .pricing__blue-text {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .pricing__item-more-text {
+        font-size: 18px;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pricing__author {
+        font-size: 18px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .contact__up {
+        vertical-align: center;
+        max-width: 1000px;
+    }
+
+    .contact__item-field-email {
+        margin-left: 0;
+    }
+
+    .calendar {
+        width: 500px;
+    }
+
+    .month {
+        width: 400px;
+        font-size: 40px;
+    }
+
+    .calendar .date {
+        width: 400px;
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+
+    .number {
+        height: 20px;
+    }
+
+    .footer__copyright {
+        font-size: 17px;
+    }
 }

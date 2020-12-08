@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJQgMEoEggCNxRUyo6JzLCG55fpY0PQSY&callback=initMap&libraries=&v=weekly" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oxygen:wght@400;700&family=Patrick+Hand&family=Roboto&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJQgMEoEggCNxRUyo6JzLCG55fpY0PQSY&callback=initMap&libraries=&v=weekly" defer></script>
     <title>Diving club</title>
 </head>
 <body>
@@ -22,16 +23,16 @@
         <div class="header__inner">
             <div class="header__logo">Waterfall</div>
             <nav class="nav">
-                <a class="nav__link" href="#">About</a>
-                <a class="nav__link" href="#">Portfolio</a>
-                <a class="nav__link" href="#">Team</a>
-                <a class="nav__link" href="#">Pricing</a>
-                <a class="nav__link" href="#">Contact</a>
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#portfolio">Portfolio</a>
+                <a class="nav__link" href="#team">Team</a>
+                <a class="nav__link" href="#pricing">Pricing</a>
+                <a class="nav__link" href="#contact">Contact</a>
             </nav>
         </div>
     </div>
 </header>
-<section class="section">
+<section class="section" id="about">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Who are we?</h2>
@@ -62,7 +63,7 @@
         </div>
     </div>
 </section>
-<section class="section section--blue">
+<section class="section section--blue" id="portfolio">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title section__title--white">Where were we?</h2>
@@ -73,16 +74,26 @@
                     <p>Tour participants always capture all the moments on camera.
                         You can also order a photo session underwater!</p>
                 </div>
-                <div class="portfolio__slider">
-                    <img class="portfolio__img" src="images/portfolio/slider1.jpg" alt="">
-                    <a class="portfolio__btn portfolio__btn-prev" href="#">Prev</a>
-                    <a class="portfolio__btn portfolio__btn-next" href="#">Next</a>
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <img class="portfolio__img" src="images/portfolio/slider1.jpg" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img class="portfolio__img" src="images/portfolio/slider1.jpg" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img class="portfolio__img" src="images/portfolio/slider1.jpg" alt="">
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button">Prev</a>
+                    <a class="slider__control slider__control_right" href="#" role="button">Next</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="section">
+<section class="section" id="team">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">Meet our team</h2>
@@ -111,7 +122,7 @@
         <a class="team__slider-item" href="#">3</a>
     </div>
 </section>
-<section class="section section--pricing">
+<section class="section section--pricing" id="pricing">
     <div class="pricing">
         <div class="pricing__item-book">
             <div class="pricing__item-title">Book a tour online</div>
@@ -151,7 +162,7 @@
         </div>
     </div>
 </section>
-<section class="section">
+<section class="section" id="contact">
     <div class="container">
         <div class="section__header">
             <h2 class="section__title">How to contact us?</h2>
@@ -224,11 +235,11 @@
 <section style="background-color: #02274B">
     <div class="container">
         <footer class="footer">
-            All rights reserved copyright (c) 2020
+            <div class="footer__copyright">All rights reserved copyright (c) 2020</div>
             <div class="footer__social">
-                <a class="footer__icon" href="\facebook">1</a>
-                <a class="footer__icon" href="\instagram">1</a>
-                <a class="footer__icon" href="\youtube">1</a>
+                <a class="footer__icon" href="#">1</a>
+                <a class="footer__icon" href="#">1</a>
+                <a class="footer__icon" href="#">1</a>
             </div>
         </footer>
     </div>
