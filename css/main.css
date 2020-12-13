@@ -18,7 +18,7 @@ h1, h2, h3 {
 
 .action__btn {
     display: block;
-    width: 120px;
+    width: 100px;
     height: 50px;
 
     margin-left: auto;
@@ -615,6 +615,343 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+@media (max-width: 500px) {
+    .intro__title {
+        font-size: 60px;
+    }
+
+    .intro__suptitle {
+        font-size: 15px;
+        margin: 15px auto 0;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .nav__link {
+        display: flex;
+    }
+
+    .section__title {
+        font-size: 35px;
+    }
+
+    .section__text {
+        font-size: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__item {
+        width: 180px;
+    }
+
+    .about__img {
+        margin-left: 40px;
+    }
+
+    .about__img img {
+        width: 100px;
+    }
+
+    .about__text {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .portfolio__text {
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .portfolio__item {
+        width: 300px;
+    }
+
+    .portfolio__img {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__item {
+        margin-bottom: 20px;
+    }
+
+    .pricing {
+        width: 320px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__item-book {
+        width: 300px;
+        height: 600px;
+    }
+
+    .pricing__item-title {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .pricing__item-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220px;
+    }
+
+    .pricing__item-field {
+        width: 250px;
+        height: 40px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .pricing__item-more {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .pricing__item-tours {
+        width: 300px;
+        height: 200px;
+    }
+
+    .pricing__item-client {
+        width: 300px;
+        height: 160px;
+    }
+
+    .pricing__blue-text {
+        font-size: 16px;
+    }
+
+    .pricing__item-more-text {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    .pricing__btn {
+        margin-bottom: 10px;
+    }
+    .section--pricing {
+        height: 950px;
+    }
+
+    .footer__copyright {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .footer__icon {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .calendar {
+        width: 280px;
+    }
+
+    .month {
+        width: 100px;
+        font-size: 20px;
+    }
+    .calendar .date {
+        grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+        width: 220px;
+    }
+
+    .calendar .date div {
+        font-size: 18px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact__item-field-email {
+        margin-left: 0;
+    }
+
+    .pricing__author {
+        margin-top: 0;
+        font-size: 15px;
+    }
+}
+
+@media (device-width: 768px) {
+    .intro__title {
+        font-size: 60px;
+    }
+
+    .intro__suptitle {
+        font-size: 15px;
+        margin: 15px auto 0;
+    }
+    .header__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section__title {
+        font-size: 40px;
+    }
+
+    .section__text {
+        font-size: 20px;
+    }
+
+    .about__item {
+        width: 180px;
+    }
+
+    .about__img {
+        margin-left: 30px;
+    }
+
+    .about__img img {
+        width: 120px;
+    }
+
+    .about__text {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .portfolio__text {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .portfolio__item {
+        width: 500px;
+    }
+
+    .portfolio__img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__item {
+        margin-bottom: 20px;
+    }
+
+    .pricing {
+        width: 320px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__item-book {
+        width: 400px;
+        height: 600px;
+    }
+
+    .pricing__item-title {
+        font-size: 30px;
+        line-height: 70px;
+    }
+
+    .pricing__item-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220px;
+    }
+
+    .pricing__item-field {
+        width: 285px;
+        height: 45px;
+        font-size: 18px;
+        margin: 0 auto 10px;
+    }
+
+    .pricing__item-more {
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .pricing__item-tours {
+        width: 400px;
+        height: 250px;
+    }
+
+    .pricing__item-client {
+        width: 400px;
+        height: 210px;
+    }
+
+    .pricing__blue-text {
+        font-size: 18px;
+    }
+
+    .pricing__item-more-text {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+
+    .pricing__btn {
+        margin-bottom: 10px;
+        margin-top: 90px;
+    }
+    .section--pricing {
+        height: 1110px;
+    }
+
+    .footer__copyright {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .footer__icon {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .calendar {
+        width: 565px;
+    }
+
+    .month {
+        width: 500px;
+        font-size: 30px;
+    }
+    .calendar .date {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        width: 500px;
+    }
+
+    .calendar .date div {
+        font-size: 27px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .contact__item-field-email {
+        margin-left: 0;
+    }
+
+    .pricing__author {
+        margin-top: 25px;
+        font-size: 19px;
+    }
+}
+
 @media (device-width: 575px) {
 
     body {
@@ -652,7 +989,7 @@ h1, h2, h3 {
     }
 
     .portfolio__img {
-        width: 300px;
+        width: 400px;
     }
 
     .slider {
@@ -908,8 +1245,8 @@ h1, h2, h3 {
     }
 
     .about__img img {
-        width: 120px;
-        margin-left: 55px;
+        width: 170px;
+        margin-left: 30px;
     }
 
     .about__text {
@@ -937,18 +1274,32 @@ h1, h2, h3 {
         width: 500px;
     }
 
+    .team {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .team__img {
         max-width: 500px;
         max-height: 170px;
     }
 
     .team__item {
-        max-width: 250px;
+        max-width: 220px;
         height: 350px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .team__about-name {
         font-size: 20px;
+    }
+
+    .section--pricing {
+        height: auto;
     }
 
     .pricing {
@@ -969,7 +1320,7 @@ h1, h2, h3 {
 
     .pricing__item-book {
         max-width: 400px;
-        margin-left: 60px;
+        margin-left: 75px;
     }
 
     .pricing__item-title {
@@ -1017,6 +1368,9 @@ h1, h2, h3 {
     .month {
         width: 400px;
         font-size: 40px;
+    }
+    .calendar .date div {
+        font-size: 35px;
     }
 
     .calendar .date {
